@@ -6,6 +6,15 @@ function factorial(n) {
     return result;
 }
 
+function permutation(n, r) {
+    if(!n || n<r || !r || n < 0 || r < 0) {
+        throw new Error("GO AWAY, invalid values");
+    }
+    var num = factorial(n);
+    var denom = factorial(n-r);
+    return num/denom;
+}
+
 function combination(n, r) {
     if(!n || n<r || !r || n < 0 || r < 0) {
         throw new Error("GO AWAY, invalid values");
