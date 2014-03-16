@@ -1,4 +1,4 @@
-JS-math
+meth-JS
 =======
 
 Some handy dandy math functions
